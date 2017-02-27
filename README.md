@@ -15,7 +15,7 @@ relu = tf.nn.relu(conv) # No bias needed
 ```
 
 ## Test
-A modified version of test code [2] is used for dubug and test of this implementation.
+A modified version of test code [2] is used to dubug and test of this implementation.
 
 ## References
 - [1] Chunjie, Luo, and Yang Qiang. "Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks." (https://arxiv.org/abs/1702.05870)
