@@ -34,3 +34,4 @@ A modified version of test code [2] is used to dubug and test of this implementa
 - [1] Chunjie, Luo, and Yang Qiang. "Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks." (https://arxiv.org/abs/1702.05870)
 - [2] https://github.com/aymericdamien/TensorFlow-Examples
 - [3] https://github.com/keras-team/keras/blob/master/keras/layers/convolutional.py
+- [4] https://keras.io/examples/cifar10_cnn/
