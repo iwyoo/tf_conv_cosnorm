@@ -16,6 +16,8 @@ from keras.utils import conv_utils
 from keras.utils.generic_utils import transpose_shape
 from keras.legacy import interfaces
 
+from keras.backend.tensorflow_backend import normalize_data_format, _is_tf_1
+from keras.backend.tensorflow_backend import _preprocess_conv2d_input, _preprocess_padding
 
 # ------------------------------------------------------------------------
 
