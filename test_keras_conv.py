@@ -1,6 +1,7 @@
 import os
 from sim_layer import Norm_Conv2d as Conv2d
 
+import keras
 from keras.datasets import cifar10
 from keras.preprocessing.image import ImageDataGenerator
 from keras.models import Sequential
