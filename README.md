@@ -28,7 +28,7 @@ model.add(Norm_Conv2d(64, (3, 3), strides=(1, 1)))
 ```
 
 ## Test
-A modified version of test code [2] is used to dubug and test of this implementation.
+Modified version of test code [2] & [4] are used to dubug and test the TF and Keras implementations respectivly.
 
 ## References
 - [1] Chunjie, Luo, and Yang Qiang. "Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks." (https://arxiv.org/abs/1702.05870)
