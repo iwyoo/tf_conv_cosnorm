@@ -13,13 +13,13 @@ Usage :
 def conv2d_cosnorm(x, w, strides, padding, bias=0.0001):
   x_shape = tf.shape(x)
   x_b = tf.fill(
-    tf.pack([x_shape[0], x_shape[1], x_shape[2], 1]), bias)
-  x = tf.concat(3, [x_b, x])
+    tf.stack([x_shape[0], x_shape[1], x_shape[2], 1]), bias)
+  x = tf.concat([x_b, x], 3)
 
   w_shape = tf.shape(w)
   w_b = tf.fill(
-    tf.pack([w_shape[0], w_shape[1], 1, w_shape[3]]), bias)
-  w = tf.concat(2, [w_b, w])
+    tf.stack([w_shape[0], w_shape[1], 1, w_shape[3]]), bias)
+  w = tf.concat([w_b, w], 2)
 
   x2 = tf.square(x)
   w1 = tf.ones_like(w)
