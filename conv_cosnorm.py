@@ -26,13 +26,20 @@ def conv2d_cosnorm(x, w, strides, padding, bias=0.0001):
   x2_len = tf.nn.conv2d(x2, w1, strides, padding)
   x_len = tf.sqrt(x2_len)
 
+  tf.debugging.check_numerics(x_len, "x_len error")
+  
   x1 = tf.ones_like(x)
   w2 = tf.square(w)
   w2_len = tf.nn.conv2d(x1, w2, strides, padding)
   w_len = tf.sqrt(w2_len)
 
+  tf.debugging.check_numerics(x_len, "w_len error")
+
   y = tf.nn.conv2d(x, w, strides, padding)
-  return y / (x_len * w_len)
+
+  return tf.math.divide_no_nan(y, (x_len * w_len))
+
+
 
 def conv3d_cosnorm(x, w, strides, padding, bias=None): # CHECK
   # Future
