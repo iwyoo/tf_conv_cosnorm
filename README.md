@@ -3,7 +3,7 @@ Tensorflow implementation of cosine normalization [1] for convolutional layer.
 There is no implementation detail of convolution version in the original paper [1].
 Therefore, the performance of this implementation is not guaranteed.
 
-This fork adds a keras layer wrapper for iwyoo's TF implementation. 
+This fork adds a keras layer wrapper for iwyoo's TF implementation. All credit goes to iwyoo for the backend tensorflow work.
 
 ## Usage (Tensorflow)
 ```
