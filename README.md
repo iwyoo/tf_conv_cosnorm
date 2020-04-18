@@ -14,6 +14,16 @@ conv = conv2d_cosnorm(x, w, strides, padding)
 relu = tf.nn.relu(conv) # No bias needed
 ```
 
+```
+# Example of using Keras
+from keras.layers import Conv2d
+model.add(Conv2D(64, (3, 3)))
+
+# conv2d_cosnorm
+from sim_layer import Norm_Conv2d as Conv2D
+model.add(Conv2D(64, (3, 3)))
+```
+
 ## Test
 A modified version of test code [2] is used to dubug and test of this implementation.
 

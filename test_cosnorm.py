@@ -7,7 +7,7 @@ This example code is based on [1].
 """
 
 import tensorflow as tf
-tf.set_random_seed(2017)
+tf.compat.v1.set_random_seed(2017)
 
 # Import MNIST data
 from tensorflow.examples.tutorials.mnist import input_data
